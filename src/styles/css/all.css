@@ -1,0 +1,454 @@
+/* font sizes*/
+/*colors*/
+.NavbarWrapper {
+  display: flex;
+  height: 40px;
+  padding: 20px;
+  background-color: transparent;
+  align-items: center;
+  color: white;
+  background-image: url("../../assets/Bg-hero.svg");
+}
+.NavbarWrapper .nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0px 150px;
+  justify-content: space-between;
+}
+.NavbarWrapper .nav .logo {
+  font-family: "Alata", sans-serif;
+  font-size: 32px;
+}
+.NavbarWrapper .nav .navLinks {
+  display: flex;
+}
+.NavbarWrapper .nav .navLinks .links {
+  margin: 0px 16px;
+}
+
+.LoginModalWrapper {
+  background-color: rgb(215, 249, 250);
+  min-height: 40vh;
+  min-width: 40vw;
+  padding: 25px;
+  border-radius: 24px;
+}
+.LoginModalWrapper .login {
+  display: flex;
+  flex-direction: column;
+}
+.LoginModalWrapper .login .loginForm .submit {
+  background-color: rgb(127, 193, 255);
+  width: 200px;
+  border-radius: 8px;
+  padding: 16px 24px;
+  cursor: pointer;
+}
+.LoginModalWrapper .login .loginForm .field {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.LoginModalWrapper .login .loginForm .field input {
+  border: none;
+  padding: 8px 4px;
+}
+.LoginModalWrapper .login .loginForm .field input:focus {
+  outline: none;
+}
+.LoginModalWrapper .login .newHere {
+  display: flex;
+}
+.LoginModalWrapper .login .newHere .signUpBtn {
+  text-decoration: underline;
+}
+
+.FooterWrapper {
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  justify-content: space-between;
+  margin-top: auto;
+}
+.FooterWrapper .footerLinks {
+  display: flex;
+}
+.FooterWrapper .footerLinks .links {
+  margin: 0px 8px;
+}
+
+.AboutWrapper .normalText {
+  font-family: "Tenor Sans", sans-serif;
+  font-size: 24px;
+  padding: 24px;
+  margin: 100px;
+}
+
+.ProductsWrapper .searchResults {
+  display: flex;
+  flex-direction: column;
+}
+.ProductsWrapper .searchResults input {
+  border: none;
+  padding: 16px;
+  margin: 30px auto 50px auto;
+  width: 300px;
+  outline: rgb(158, 158, 158) solid 1px;
+  border-radius: 8px;
+  font-family: "Alata", sans-serif;
+}
+.ProductsWrapper .searchResults input:focus {
+  outline: rgb(102, 212, 51) solid 1px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.ProductsWrapper .searchResults .productCardsFlex {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-column-gap: 6px;
+  grid-row-gap: 6px;
+}
+.ProductsWrapper .searchResults .productCardsFlex .ProductCardWrapper {
+  border: 1px solid black;
+  max-width: 300px;
+  min-height: 300px;
+  max-height: 300px;
+  margin: 24px;
+  padding: 24px;
+  display: flex;
+  font-weight: 500;
+  flex-direction: column;
+  text-align: left;
+  cursor: pointer;
+}
+.ProductsWrapper .searchResults .productCardsFlex .ProductCardWrapper:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.ProductsWrapper .searchResults .productCardsFlex .ProductCardWrapper .title {
+  margin-bottom: 10px;
+}
+.ProductsWrapper .searchResults .productCardsFlex .ProductCardWrapper .photos {
+  display: flex;
+  max-width: 280px;
+  max-height: 280px;
+  overflow: hidden;
+}
+.ProductsWrapper .searchResults .productCardsFlex .ProductCardWrapper .photos .scrollBtn {
+  outline: 1px solid white;
+  background-color: white;
+}
+.ProductsWrapper .searchResults .productCardsFlex .ProductCardWrapper .photos img {
+  max-width: 280px;
+  max-height: 280px;
+}
+.ProductsWrapper .searchResults .productCardsFlex .ProductCardWrapper .row {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ProductsWrapper .searchResults .productCardsFlex .ProductCardWrapper .row .productCounter {
+  display: flex;
+}
+.ProductsWrapper .searchResults .productCardsFlex .ProductCardWrapper .row .productCounter .productCount {
+  padding: 8px 16px;
+  border: 1px solid #A8FF35;
+}
+.ProductsWrapper .searchResults .productCardsFlex .ProductCardWrapper .row .cartBtn {
+  background-color: #A8FF35;
+  color: black;
+  padding: 8px 8px;
+  max-width: 100px;
+}
+
+.ProductDetailWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+  margin: auto;
+}
+.ProductDetailWrapper .category {
+  padding: 8px 4px;
+  border: 2px solid black;
+  font-weight: 600;
+  max-width: 200px;
+  margin: 12px 0px;
+}
+.ProductDetailWrapper .flex {
+  display: flex;
+}
+.ProductDetailWrapper .flex .imgWrapper {
+  display: flex;
+  align-items: center;
+}
+.ProductDetailWrapper .flex .imgWrapper .imgCol {
+  display: flex;
+  flex-direction: column;
+}
+.ProductDetailWrapper .flex .imgWrapper .imgCol img {
+  max-width: 100px;
+  max-height: 100px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+}
+.ProductDetailWrapper .flex .imgWrapper .img {
+  padding: 20px;
+}
+.ProductDetailWrapper .flex .detailSec {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 24px;
+  text-align: left;
+}
+.ProductDetailWrapper .flex .detailSec .title {
+  font-size: 24px;
+  text-decoration: underline;
+  margin-bottom: 12px;
+}
+.ProductDetailWrapper .flex .detailSec .price {
+  margin: 30px 0px;
+  font-size: 32px;
+  font-weight: 600;
+}
+.ProductDetailWrapper .flex .detailSec .row {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ProductDetailWrapper .flex .detailSec .row .productCounter {
+  display: flex;
+}
+.ProductDetailWrapper .flex .detailSec .row .productCounter .productCount {
+  padding: 8px 16px;
+  border: 1px solid #A8FF35;
+}
+.ProductDetailWrapper .flex .detailSec .row .cartBtn {
+  background-color: #A8FF35;
+  color: black;
+  padding: 8px 8px;
+  max-width: 100px;
+}
+
+.CarouselWrapper {
+  display: flex;
+}
+.CarouselWrapper .thumbnailWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.CarouselWrapper .thumbnailWrapper .thumbnail {
+  border: 1px solid black;
+  margin: 10px;
+}
+.CarouselWrapper .thumbnailWrapper .thumbnail img {
+  max-width: 100px;
+  max-height: 100px;
+}
+.CarouselWrapper .imgTrain {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  max-width: 300px;
+  overflow: hidden;
+}
+.CarouselWrapper .imgTrain .carouselItem {
+  min-width: 400px;
+  position: relative;
+}
+.CarouselWrapper .imgTrain .carouselItem .customRender {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
+.FilterWrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 24px;
+  border: 1px solid black;
+  max-width: 200px;
+}
+.FilterWrapper .titleRow {
+  margin: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.FilterWrapper .titleRow .expandIcon {
+  margin-right: 2px;
+}
+.FilterWrapper .options {
+  margin-bottom: 4px;
+}
+
+/* font sizes*/
+/*colors*/
+.CoverWrapper {
+  position: relative;
+}
+.CoverWrapper .image {
+  background-size: cover;
+  min-width: 300px;
+  min-height: 600px;
+  background-image: url("../../assets/Bg-hero.svg");
+}
+.CoverWrapper .create {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  margin: auto;
+  color: white;
+  font-family: "Alata", sans-serif;
+  font-size: 80px;
+  text-align: center;
+}
+.CoverWrapper .create .subTitle {
+  font-size: 24px;
+  color: grey;
+  width: 80%;
+}
+.CoverWrapper .create .sideText .primaryBtn {
+  background-color: #A8FF35;
+  border-radius: 40px;
+  width: 200px;
+  padding: 16px;
+  font-size: 16px;
+  color: black;
+}
+
+.CoverTwoWrapper {
+  background-color: #A8FF35;
+  min-height: 300px;
+  position: relative;
+}
+.CoverTwoWrapper .create {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 30%;
+  font-family: "Alata", sans-serif;
+  font-size: 80px;
+  text-align: center;
+  margin: auto;
+}
+.CoverTwoWrapper .create .subTitle {
+  font-size: 24px;
+  width: 80%;
+}
+
+.CoverThreeWrapper {
+  display: flex;
+  min-height: 600px;
+  padding: 80px;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  font-family: "Alata", sans-serif;
+  font-size: 64px;
+  text-align: left;
+}
+
+.CoverFourWrapper {
+  background-color: #A8FF35;
+  min-height: 400px;
+  font-family: "Alata", sans-serif;
+  font-size: 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.CoverFourWrapper .title .greyText {
+  color: #87D322;
+}
+.CoverFourWrapper .primaryBtn {
+  background-color: black;
+  border-radius: 40px;
+  width: 200px;
+  padding: 16px;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
+
+.CompaniesWrapper .title {
+  font-family: "Alata", sans-serif;
+  font-size: 64px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 32px;
+}
+.CompaniesWrapper .gridWrapper {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto;
+  flex-wrap: wrap;
+}
+.CompaniesWrapper .gridWrapper .CompaniesCardWrapper {
+  background-color: #F5F5F5;
+  padding: 24px 8px;
+  max-height: 80px;
+  align-items: center;
+  margin: 25px;
+}
+
+.DealCoverWrapper {
+  background-color: black;
+  color: white;
+  font-family: "Alata", sans-serif;
+  padding: 48px;
+}
+.DealCoverWrapper .title {
+  font-size: 36px;
+  margin: 30px;
+}
+.DealCoverWrapper .cards {
+  display: flex;
+  justify-content: space-around;
+}
+.DealCoverWrapper .cards .DealCardWrapper {
+  background-color: white;
+  position: relative;
+  color: black;
+  min-width: 280px;
+  min-height: 500px;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.DealCoverWrapper .cards .DealCardWrapper .title {
+  font-size: 24px;
+}
+.DealCoverWrapper .cards .DealCardWrapper .price {
+  display: flex;
+  align-items: center;
+}
+.DealCoverWrapper .cards .DealCardWrapper .price .number {
+  font-size: 64px;
+}
+.DealCoverWrapper .cards .DealCardWrapper .tick {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.DealCoverWrapper .cards .DealCardWrapper .primaryBtn {
+  position: absolute;
+  bottom: 20px;
+  background-color: #A8FF35;
+  border-radius: 40px;
+  width: 200px;
+  padding: 16px;
+  font-size: 16px;
+  color: black;
+}
+
+/*# sourceMappingURL=all.css.map */

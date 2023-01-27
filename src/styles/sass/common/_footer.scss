@@ -1,0 +1,15 @@
+.FooterWrapper{
+    
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    justify-content: space-between;
+   margin-top: auto;
+    .footerLinks{
+        display: flex;
+        .links{
+            margin: 0px 8px;
+
+        }
+    }
+}

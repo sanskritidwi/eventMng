@@ -1,0 +1,102 @@
+.CoverWrapper{
+    position: relative;
+    .image{
+        background-size: cover;
+        min-width: 300px;
+        min-height: 600px;
+        background-image: url("../../assets/Bg-hero.svg");
+    }
+    .create{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        margin: auto;
+        color: white;
+        font-family: $fontLogo;
+        font-size: 80px;
+        text-align: center;
+        .subTitle{
+            font-size: 24px;
+            color: grey;
+            width: 80%;
+        }
+        .sideText{
+            .primaryBtn{
+                background-color: #A8FF35 ;
+                border-radius: 40px;
+                width: 200px;
+                padding: 16px ;
+                font-size: 16px;
+                color: black;
+    
+             }
+        }
+       
+    }
+   
+}
+
+.CoverTwoWrapper{
+    background-color: #A8FF35 ;
+    min-height: 300px;
+    position: relative;
+    .create{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        top: 30%;
+        font-family: $fontLogo;
+        font-size: 80px;
+        text-align: center;
+        margin: auto;
+    
+    
+        .subTitle{
+            font-size: 24px;
+            width: 80%;
+        }}
+      
+}
+
+.CoverThreeWrapper{
+    display: flex;
+    min-height: 600px;
+padding: 80px;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    font-family: $fontLogo;
+    font-size: 64px;
+    text-align: left;
+}
+
+.CoverFourWrapper{
+    background-color: #A8FF35 ;
+    min-height: 400px;
+    font-family: $fontLogo;
+    font-size: 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    .title{
+        .greyText{
+            color: #87D322;
+        }
+    }
+    .primaryBtn{
+        background-color: black ;
+        border-radius: 40px;
+        width: 200px;
+        padding: 16px ;
+        font-size: 16px;
+        color: rgb(255, 255, 255);
+
+     }
+}

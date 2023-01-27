@@ -1,0 +1,47 @@
+.LoginModalWrapper{
+   
+   background-color: rgb(215, 249, 250);
+   min-height: 40vh;
+   min-width: 40vw;
+   padding: 25px;
+   border-radius: 24px;
+    .login{
+        display: flex;
+        flex-direction: column;
+        .loginForm{
+          
+            .submit{
+                background-color: rgb(127, 193, 255);
+                width: 200px;
+                border-radius: 8px;
+                padding: 16px 24px;
+                cursor: pointer;
+            }
+            .title{
+
+            }
+            .field{
+                margin: 20px;
+                display: flex;
+                flex-direction: column;
+                label{
+
+                }
+                input{
+                    border: none;
+                    padding: 8px 4px;
+                    &:focus{
+                        outline: none;
+                    }
+                }
+            }
+        }
+        .newHere{
+            display: flex;
+            .signUpBtn{
+                text-decoration: underline;
+            }
+        }
+    }
+    
+}

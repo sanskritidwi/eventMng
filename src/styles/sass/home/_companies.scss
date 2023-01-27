@@ -1,0 +1,21 @@
+.CompaniesWrapper{
+    .title{
+        font-family: $fontLogo;
+        font-size: 64px;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 32px;
+    }
+    .gridWrapper{
+        display: inline-grid;
+        grid-template-columns: auto auto auto auto;    flex-wrap: wrap;
+        .CompaniesCardWrapper{
+            background-color: #F5F5F5;
+            padding: 24px 8px;
+            max-height: 80px;
+            align-items: center;
+            margin: 25px;
+        }
+    }
+   
+}

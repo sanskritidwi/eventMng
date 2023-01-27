@@ -1,0 +1,87 @@
+.ProductsWrapper{
+  
+.searchResults{
+    display: flex;
+    flex-direction: column;
+   
+        input{
+            border: none;
+            padding: 16px;
+            margin: 30px auto 50px auto;
+            width: 300px;
+            outline: rgb(158, 158, 158) solid 1px;
+            border-radius: 8px;
+            font-family: $fontLogo;
+            &:focus{
+                outline: rgb(102, 212, 51) solid 1px;
+                border-radius: 8px;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            }
+        }
+    .productCardsFlex{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-column-gap: 6px;
+        grid-row-gap:6px;
+        .ProductCardWrapper{
+            // background-color: black;
+            // color: white;
+            border: 1px solid black;
+            
+            max-width: 300px;
+            min-height: 300px;
+            max-height: 300px;
+            margin: 24px;
+            padding: 24px;
+            display: flex;
+            font-weight: 500;
+            flex-direction: column;
+            text-align: left;
+            cursor: pointer;
+            &:hover{
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            }
+            .title{
+                margin-bottom: 10px;
+            }
+            .photos{
+                display: flex;
+                max-width: 280px;
+                max-height: 280px;
+                overflow: hidden;
+                .scrollBtn{
+                    outline: 1px solid white;
+                    background-color: white;
+                }
+                img{
+                    max-width: 280px;
+                    max-height: 280px;
+                }
+            }
+            .row{
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .productCounter{
+                    display: flex;
+                    .productCount{
+                        padding: 8px 16px;
+                        border: 1px solid #A8FF35;
+                    }
+                }
+                .cartBtn{
+                    background-color: #A8FF35;
+                    color: black;
+                    padding: 8px 8px;
+                    max-width: 100px;
+                }
+            }
+            
+          
+        }
+    }
+}
+    
+   
+}
